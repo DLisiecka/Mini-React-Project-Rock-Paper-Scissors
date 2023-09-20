@@ -1,7 +1,11 @@
-export const CHOICES = [
-    { name: "rock", emoji: "✊" },
-    { name: "paper", emoji: "✋" },
-    { name: "scissors", emoji: "✌️" }
-];
+export const NAME_KEY = {
+    ROCK: 'rock',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
+};
 
-export const NAMES = ['rock','paper','scissors'];
+export const CHOICES = [
+    { name: NAME_KEY.ROCK, emoji: "✊" },
+    { name: NAME_KEY.PAPER, emoji: "✋" },
+    { name: NAME_KEY.SCISSORS, emoji: "✌️" }
+];

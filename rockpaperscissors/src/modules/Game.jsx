@@ -10,7 +10,6 @@ const Game = () => {
     const [result, setResult] = useState(null);
 
     const handlePlayerChoice = (choice) => () => {
-        console.log(choice);
         const compChoice = renderChoice();
         setPlayerChoice(choice);
         setCompChoice(compChoice);
@@ -28,12 +27,13 @@ const Game = () => {
     };
 
     return (
-        <View 
-            handleClick={handlePlayerChoice}
-            player={playerChoice}
-            comp={compChoice}
-            result={result}
-            handleReset={resetGame} />
+        <View {...{
+            handlePlayerChoice,
+            playerChoice,
+            compChoice,
+            result,
+            resetGame,
+        }} />
     )
 
 }

@@ -1,5 +1,5 @@
 import {CHOICES} from "./consts";
-import { NAMES } from "./consts";
+import { NAME_KEY } from "./consts";
 
 
 export function renderChoice(){
@@ -7,13 +7,13 @@ export function renderChoice(){
 };
 
 export function isRock(choice){
-    if(choice === NAMES[0]) return NAMES[0];
+    return choice === NAME_KEY.ROCK;
 };
 
 export function isPaper(choice){
-    if(choice === NAMES[1]) return NAMES[1];
+    return choice === NAME_KEY.PAPER;
 };
 
 export function isScissors(choice){
-    if(choice === NAMES[2]) return NAMES[2];
+    return choice === NAME_KEY.SCISSORS;
 };
